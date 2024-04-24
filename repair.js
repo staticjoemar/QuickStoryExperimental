@@ -78,6 +78,12 @@ document.getElementById("spencerbutton").onclick = function(){
                 document.getElementById("storyFinal").value = "MOUNT AND BALANCE FOUR TIRES\nSET TO 35 PSI\nTORQUED ALL LUG NUTS TO 80 FT LBS";
             }
         }
+        document.getElementById("frAlignBtn").onclick=function(){
+            document.getElementById("storyFinal").value = "ALIGN FRONT SUSPENSION\nADJUST ANGLES TO SPEC\nROAD TEST, OK\nVEHICLE TRACKING STRAIGHT";
+        }
+        document.getElementById("AlignBtn").onclick=function(){
+            document.getElementById("storyFinal").value = "ALIGN FRONT AND REAR SUSPENSION\nADJUST ANGLES TO SPEC\nROAD TEST, OK\nVEHICLE TRACKING STRAIGHT";
+        }
     //CV axle autofills  
         document.getElementById("innerouterbtn").onclick=function(){
             if(lhcvchbx.checked==true){
@@ -101,6 +107,17 @@ document.getElementById("spencerbutton").onclick = function(){
                 document.getElementById("storyFinal").value= "REMOVE BOTH FRONT AXLES\nDISSASEMBLE BOTH FRONT CV AXLES\nREPLACE BOTH FRONT INNER CV BOOTS\nAPPLY NEW GREASE, CLAMPS, AND REPLACE AXLE NUTS\nTORQUED ALL FASTENERS TO SPEC\nROAD TEST AND VERIFY NORMAL OPERATION";
             }
         }
+        document.getElementById("replaceShaft").onclick=function(){
+            if(lhcvchbx.checked==true){
+                document.getElementById("storyFinal").value= "REPLACED LH CV AXLE ASSY\nREPLACED AXLE NUT\nTORQUED ALL FASTENERS TO SPEC\nROAD TEST AND VERIFY NORMAL OPERATION, OK";
+            }
+            if(rhcvchbx.checked==true){
+                document.getElementById("storyFinal").value= "REPLACED RH CV AXLE ASSY\nREPLACED AXLE NUT\nTORQUED ALL FASTENERS TO SPEC\nROAD TEST AND VERIFY NORMAL OPERATION, OK";
+            }
+            if(lhcvchbx.checked==true&&rhcvchbx.checked==true){
+                document.getElementById("storyFinal").value= "REPLACED BOTH FRONT CV AXLE ASSY\nREPLACED AXLE NUTS\nTORQUED ALL FASTENERS TO SPEC\nROAD TEST AND VERIFY NORMAL OPERATION, OK";
+            }
+        }
     //steering rack
         document.getElementById("steeringrackbtn").onclick=function(){
             document.getElementById("storyFinal").value= "LOCK STEERING WHEEL\nDISCONNECT P/S LINES AND DRAIN FLUID\nDISCONNECT INTERMEDIATE SHAFT\nDISCONNECT BOTH OUTER TIE ROD ENDS\nREMOVE AND REPLACE STEERING RACK\nCENTER NEW PART\nREINSTALL TIE ROD ENDS AND REPLACE COTTER PINS\nREINSTALL P/S LINES\nREINSTALL INTERMEDIATE SHAFT\nFILL AND BLEED SYSTEM\nALIGN FRONT SUSPENSION AND ROAD TEST, OK";
@@ -120,6 +137,8 @@ document.getElementById("hdrBtn1").onclick=function(){
     document.getElementById("menu3").setAttribute("hidden","hidden");
     document.getElementById("menu4").setAttribute("hidden","hidden");
     document.getElementById("menu5").setAttribute("hidden","hidden");
+    document.getElementById("menu6").setAttribute("hidden","hidden");
+
 }
 document.getElementById("hdrBtn2").onclick=function(){
     document.getElementById("menu2").toggleAttribute("hidden");
@@ -128,6 +147,8 @@ document.getElementById("hdrBtn2").onclick=function(){
     document.getElementById("menu3").setAttribute("hidden","hidden");
     document.getElementById("menu4").setAttribute("hidden","hidden");
     document.getElementById("menu5").setAttribute("hidden","hidden");
+    document.getElementById("menu6").setAttribute("hidden","hidden");
+
 }
 document.getElementById("hdrBtn3").onclick=function(){
     document.getElementById("menu3").toggleAttribute("hidden");
@@ -136,6 +157,8 @@ document.getElementById("hdrBtn3").onclick=function(){
     document.getElementById("menu2").setAttribute("hidden","hidden");
     document.getElementById("menu4").setAttribute("hidden","hidden");
     document.getElementById("menu5").setAttribute("hidden","hidden");
+    document.getElementById("menu6").setAttribute("hidden","hidden");
+
 }
 document.getElementById("hdrBtn4").onclick=function(){
     document.getElementById("menu4").toggleAttribute("hidden");
@@ -143,7 +166,9 @@ document.getElementById("hdrBtn4").onclick=function(){
     document.getElementById("menu1").setAttribute("hidden","hidden");
     document.getElementById("menu2").setAttribute("hidden","hidden");
     document.getElementById("menu3").setAttribute("hidden","hidden");
-    document.getElementById("menu5").setAttribute("hidden","hidden");    
+    document.getElementById("menu5").setAttribute("hidden","hidden"); 
+    document.getElementById("menu6").setAttribute("hidden","hidden");
+   
 }
 document.getElementById("hdrBtn5").onclick=function(){
     document.getElementById("menu5").toggleAttribute("hidden");
@@ -152,6 +177,18 @@ document.getElementById("hdrBtn5").onclick=function(){
     document.getElementById("menu2").setAttribute("hidden","hidden");
     document.getElementById("menu3").setAttribute("hidden","hidden");
     document.getElementById("menu4").setAttribute("hidden","hidden");
+    document.getElementById("menu6").setAttribute("hidden","hidden");
+
+}
+document.getElementById("hdrBtn6").onclick=function(){
+    document.getElementById("menu6").toggleAttribute("hidden");
+    closeDivs();
+    document.getElementById("menu1").setAttribute("hidden","hidden");
+    document.getElementById("menu2").setAttribute("hidden","hidden");
+    document.getElementById("menu3").setAttribute("hidden","hidden");
+    document.getElementById("menu4").setAttribute("hidden","hidden");
+    document.getElementById("menu5").setAttribute("hidden","hidden");
+
 }
 //Declare hidden items
 let brkDiv1 = document.getElementById("brkDiv1");
@@ -252,12 +289,4 @@ function closeDivs(){
     brkDiv2.style.display="none";
     brkDiv3.style.display="none";
 }
-/*
-To add new content
--------------------
-1. create new div in main area in html ex. (brkDiv1)
-2. code write(); function in js.
-3. create new menuBtn ex. (brkDiv1Btn)
-4. declare .display="none" variables for divs (same name as step1)
-5. code open and close div function in js. (add to closeDivs();)
-*/
+
