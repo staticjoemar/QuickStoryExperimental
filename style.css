@@ -4,7 +4,7 @@ body{
     background-color: darkgray;
 }
 .titleBtn{
-    height: 60px;
+    height: 30px;
      width: 200px;
       border-radius: 10px;
       font-family: monospace;
@@ -62,12 +62,20 @@ body{
     color: darkslategray;
 }
 .headerBtn{
-    background-color: transparent; 
+    
     color: white; 
     font-family: monospace;
      font-size: 24px;
-      border-color: transparent;
+    
     cursor: pointer;
+
+
+    height: 35px;
+     width: 300px;
+      border-radius: 10px;
+      font-family: monospace;
+      background-color: black;
+      
 }
 .headerBtn:hover{
     color: greenyellow;
