@@ -128,8 +128,7 @@ document.getElementById("insertbutton").onclick = function()
     }
     else if (occhbx.checked==true){
         oilChange();
-    }
-}
+    }}
 //copy to clipboard
 document.getElementById("copybutton").onclick = function(){
     var text = document.getElementById('storyFinal');
@@ -205,16 +204,14 @@ document.getElementById("psbtn").onclick=function(){
         }
         if(bladechbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED BOTH FRONT WIPER BLADES";
-        }
-    }
+        }}
     document.getElementById("rrwiperbtn").onclick=function(){
         if(insertchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED REAR WIPER INSERT";
         }
         if(bladechbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED REAR WIPER BLADE";
-        }
-    }
+        }}
     //battery autofill
     document.getElementById("battbtn").onclick=function(){
         document.getElementById("storyFinal").value = "REPLACED 12V BATTERY\nCLEAN POS AND NEG TERMINALS\nTORQUE TO SPEC AND APPLY BATTERY TERMINAL PROTECTOR\nVERIFY OPERATION OF STARTING AND CHARGING SYSTEMS, OK";
@@ -232,8 +229,7 @@ document.getElementById("psbtn").onclick=function(){
         }
         if(lhbulbchbx.checked==true&&rhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED BOTH HEADLIGHT BULBS\nCHECK OPERATION, OK";
-        }
-    }
+        }}
     document.getElementById("taillightbtn").onclick=function(){
         if(lhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED LH TAIL LIGHT BULB\nCHECK OPERATION, OK";
@@ -243,8 +239,7 @@ document.getElementById("psbtn").onclick=function(){
         }
         if(lhbulbchbx.checked==true&&rhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED BOTH TAIL LIGHT BULBS\nCHECK OPERATION, OK";
-        }
-    }
+        }}
     document.getElementById("turnsignalfrbtn").onclick=function(){
         if(lhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED LF TURN SIGNAL BULB\nCHECK OPERATION, OK";
@@ -254,8 +249,7 @@ document.getElementById("psbtn").onclick=function(){
         }
         if(lhbulbchbx.checked==true&&rhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED BOTH FRONT TURN SIGNAL BULBS\nCHECK OPERATION, OK";
-        }
-    }
+        }}
     document.getElementById("turnsignalrrbtn").onclick=function(){
         if(lhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED LR TURN SIGNAL BULB\nCHECK OPERATION, OK";
@@ -265,8 +259,7 @@ document.getElementById("psbtn").onclick=function(){
         }
         if(lhbulbchbx.checked==true&&rhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED BOTH REAR TURN SIGNAL BULBS\nCHECK OPERATION, OK";
-        }
-    }
+        }}
     document.getElementById("licensebtn").onclick=function(){
         if(lhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED LH LICENSE PLATE LIGHT BULB\nCHECK OPERATION, OK";
@@ -276,8 +269,7 @@ document.getElementById("psbtn").onclick=function(){
         }
         if(lhbulbchbx.checked==true&&rhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED BOTH LICENSE PLATE LIGHT BULBS\nCHECK OPERATION, OK";
-        }
-    }
+        }}
     document.getElementById("sidemarkerbtn").onclick=function(){
         if(lhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED LH SIDE MARKER BULB\nCHECK OPERATION, OK";
@@ -287,8 +279,7 @@ document.getElementById("psbtn").onclick=function(){
         }
         if(lhbulbchbx.checked==true&&rhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED BOTH SIDE MARKER BULBS\nCHECK OPERATION, OK";
-        }
-    }
+        }}
     document.getElementById("reversebtn").onclick=function(){
         if(lhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED LH REVERSE BULB\nCHECK OPERATION, OK";
@@ -298,8 +289,7 @@ document.getElementById("psbtn").onclick=function(){
         }
         if(lhbulbchbx.checked==true&&rhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED BOTH REVERSE BULBS\nCHECK OPERATION, OK";
-        }
-    }
+        }}
     document.getElementById("brakelightbtn").onclick=function(){
         if(lhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED LH BRAKE LIGHT BULB\nCHECK OPERATION, OK";
@@ -309,8 +299,7 @@ document.getElementById("psbtn").onclick=function(){
         }
         if(lhbulbchbx.checked==true&&rhbulbchbx.checked==true){
             document.getElementById("storyFinal").value = "REPLACED BOTH BRAKE LIGHT BULBS\nCHECK OPERATION, OK";
-        }
-    }
+        }}
 //spencer
 document.getElementById("spencerbutton").onclick = function(){
     document.getElementById("spencerimg").toggleAttribute("hidden");
@@ -320,147 +309,77 @@ document.getElementById("spencerbutton").onclick = function(){
 let factoryMenuHidden = document.getElementById("factorymenu");
 let bgHidden = document.getElementById("bg");
 let miscHidden = document.getElementById("misc");
-let miscSubFilterHidden = document.getElementById("misc/filter");
-let miscSubWiperHidden = document.getElementById("misc/wipers");
-let miscSubBatteryHidden = document.getElementById("misc/battery");
-let miscSubBulbsHidden = document.getElementById("misc/bulbs");
+let miscDiv1 = document.getElementById("miscDiv1");
+let miscDiv2 = document.getElementById("miscDiv2");
+let miscDiv3 = document.getElementById("miscDiv3");
+let miscDiv4 = document.getElementById("miscDiv4");
 
 
 document.getElementById("factorymenubutton").onclick=function(){
-    document.getElementById("miscsubmenu").setAttribute("hidden","hidden");
+    document.getElementById("menu1").setAttribute("hidden","hidden");
     if(factoryMenuHidden.style.display==="none"){
+        closeDivs();
         factoryMenuHidden.style.display="inline-block";
-        bgHidden.style.display="none";
-            miscSubWiperHidden.style.display="none";
-            miscSubBulbsHidden.style.display="none";
-            miscSubBatteryHidden.style.display="none";
-            miscSubFilterHidden.style.display="none";
     }
     else if(factoryMenuHidden.style.display==="inline-block"){
         factoryMenuHidden.style.display="none";
-    }
-}
+    }}
 document.getElementById("bgbutton").onclick=function(){
-    document.getElementById("miscsubmenu").setAttribute("hidden","hidden");
-    
+    document.getElementById("menu1").setAttribute("hidden","hidden");    
     if(bgHidden.style.display==="none"){
+        closeDivs();
         bgHidden.style.display="inline-block";
-        factoryMenuHidden.style.display="none";
-            miscSubWiperHidden.style.display="none";
-            miscSubBulbsHidden.style.display="none";
-            miscSubBatteryHidden.style.display="none";
-            miscSubFilterHidden.style.display="none";
     }
     else if(bgHidden.style.display==="inline-block"){
         bgHidden.style.display="none";
-    }
-}
+    }}
 document.getElementById("miscbtn").onclick=function(){
-    document.getElementById("miscsubmenu").toggleAttribute("hidden");
-    factoryMenuHidden.style.display="none";
-    bgHidden.style.display="none";
-        miscSubWiperHidden.style.display="none";
-        miscSubBulbsHidden.style.display="none";
-        miscSubBatteryHidden.style.display="none";
-        miscSubFilterHidden.style.display="none";
+    closeDivs();
+    document.getElementById("menu1").toggleAttribute("hidden");
 }
 //misc submenu buttons
-        document.getElementById("filtermenubutton").onclick=function(){ 
-            factoryMenuHidden.style.display="none";
-            bgHidden.style.display="none";
-            miscSubWiperHidden.style.display="none";
-            miscSubBulbsHidden.style.display="none";
-            miscSubBatteryHidden.style.display="none";
-                if(miscSubFilterHidden.style.display==="none"){
-                    miscSubFilterHidden.style.display="inline-block";
+        document.getElementById("miscDiv1Btn").onclick=function(){             
+                if(miscDiv1.style.display==="none"){
+                    closeDivs();
+                    miscDiv1.style.display="inline-block";
                 }
-                else if(miscSubFilterHidden.style.display==="inline-block"){
-                    miscSubFilterHidden.style.display="none";
-                }  
-        }
-        document.getElementById("batterymenubutton").onclick=function(){
-            factoryMenuHidden.style.display="none";
-            bgHidden.style.display="none";
-            miscSubWiperHidden.style.display="none";
-            miscSubBulbsHidden.style.display="none";
-            miscSubFilterHidden.style.display="none";
-                if(miscSubBatteryHidden.style.display==="none"){
-                    miscSubBatteryHidden.style.display="inline-block";
+                else if(miscDiv1.style.display==="inline-block"){
+                    miscDiv1.style.display="none";
+                }}
+        document.getElementById("miscDiv2Btn").onclick=function(){
+                if(miscDiv2.style.display==="none"){
+                    closeDivs();
+                    miscDiv2.style.display="inline-block";
                 }
-                else if(miscSubBatteryHidden.style.display==="inline-block"){
-                    miscSubBatteryHidden.style.display="none";
-                }     
-        }
-        document.getElementById("bulbmenubutton").onclick=function(){
-            factoryMenuHidden.style.display="none";
-            bgHidden.style.display="none";
-            miscSubWiperHidden.style.display="none";
-            miscSubBatteryHidden.style.display="none";
-            miscSubFilterHidden.style.display="none";
-                if(miscSubBulbsHidden.style.display==="none"){
-                    miscSubBulbsHidden.style.display="inline-block";
+                else if(miscDiv2.style.display==="inline-block"){
+                    miscDiv2.style.display="none";
+                }}     
+        document.getElementById("miscDiv3Btn").onclick=function(){
+                if(miscDiv3.style.display==="none"){
+                    closeDivs();
+                    miscDiv3.style.display="inline-block";
                 }
-                else if(miscSubBulbsHidden.style.display==="inline-block"){
-                    miscSubBulbsHidden.style.display="none";
-                }    
-        }
-        document.getElementById("wipermenubutton").onclick=function(){
-            factoryMenuHidden.style.display="none";
-            bgHidden.style.display="none";
-            miscSubBatteryHidden.style.display="none";
-            miscSubFilterHidden.style.display="none";
-            miscSubBulbsHidden.style.display="none";
-                if(miscSubWiperHidden.style.display==="none"){
-                    miscSubWiperHidden.style.display="inline-block";
+                else if(miscDiv3.style.display==="inline-block"){
+                    miscDiv3.style.display="none";
+                }}    
+        document.getElementById("miscDiv4Btn").onclick=function(){
+                if(miscDiv4.style.display==="none"){
+                    closeDivs();
+                    miscDiv4.style.display="inline-block";
                 }
-                else if(miscSubWiperHidden.style.display==="inline-block"){
-                    miscSubWiperHidden.style.display="none";
-                }     
-        }
+                else if(miscDiv4.style.display==="inline-block"){
+                    miscDiv4.style.display="none";
+                }}   
 //clear final text field
 document.getElementById("finalstoryclearbutton").onclick=function(){
     document.getElementById("storyFinal").value=null;
 }
-
-function hideTabs(){
-        miscSubWiperHidden.style.display="none";
-        document.getElementById("miscsubmenu").setAttribute("hidden","hidden");
+function closeDivs(){
         factoryMenuHidden.style.display="none";
         bgHidden.style.display="none";
-        miscSubBatteryHidden.style.display="none";
-        miscSubFilterHidden.style.display="none";
-        miscSubBulbsHidden.style.display="none";
-
+        miscDiv1.style.display="none";
+        miscDiv2.style.display="none";
+        miscDiv3.style.display="none";
+        miscDiv4.style.display="none";
 }
-//toggle hidden on divs
-
-/*
-function toggleHidden(){
-    let x = document.getElementById("factorymenu");
-    if(x.style.display==="none"){
-        x.style.display="inline-block";
-    }
-    else if(x.style.display==="inline-block"){
-        x.style.display="none";
-    }
-}
-
-*/
-/*  hide tabs
-
-miscSubWiperHidden.style.display="none";
-document.getElementById("miscsubmenu").setAttribute("hidden","hidden");
-
-        factoryMenuHidden.style.display="none";
-        bgHidden.style.display="none";
-        miscSubBatteryHidden.style.display="none";
-        miscSubFilterHidden.style.display="none";
-        miscSubBulbsHidden.style.display="none";
-
-
-
-
-
-*/
-
 

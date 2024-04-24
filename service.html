@@ -9,29 +9,29 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <a href="service.html"><button  class="headerbutton">services</button></a>
-    <a href="repair.html"><button class="headerbutton">repairs</button></a>
-    <a href="recall.html"><button  class="headerbutton">recalls</button></a>
+    <a href="service.html"><button  class="titleBtn">SERVICES</button></a>
+    <a href="repair.html"><button class="titleBtn">REPAIRS</button></a>
+    <a href="recall.html"><button  class="titleBtn">RECALLS(INOP)</button></a>
     <h1 class="pagetitle">SERVICES</h1>
 <!-- -->
     <p class="pagedivider">.</p>
     <p class="dividertitle">
-         <button class="dividerbtn" id="factorymenubutton">FACTORY MENU</button>
-         <button class="dividerbtn" id="bgbutton">BG </button>
-         <button class="dividerbtn" id="miscbtn">MISC</button>
+         <button class="headerBtn" id="factorymenubutton">FACTORY MENU</button>
+         <button class="headerBtn" id="bgbutton">BG </button>
+         <button class="headerBtn" id="miscbtn">MISC</button>
     </p>
-<!-- submenu for misc hidden-->
-<div id="miscsubmenu" hidden>
-        <button id="batterymenubutton" class="headerbutton">BATTERY</button>
-        <button id="bulbmenubutton" class="headerbutton">BULB</button>
-        <button id="wipermenubutton" class="headerbutton">WIPER</button>
-        <button id="filtermenubutton" class="headerbutton">FILTERS</button>
+<!-- menu for misc hidden-->
+<div id="menu1" hidden>
+        <button id="miscDiv1Btn" class="titleBtn">FILTERS</button>
+        <button id="miscDiv2Btn" class="titleBtn">WIPER</button>
+        <button id="miscDiv3Btn" class="titleBtn">BATTERY</button>
+        <button id="miscDiv4Btn" class="titleBtn">BULB</button>
 </div>
 <div class="parent">
     <!--first child, will have all "first child divs in here hidden"-->
         <!-- factory menu hidden -->
     <div id="factorymenu" style="display: none;vertical-align: middle;padding: 1rem 1rem">
-        <p class="dividertitle">FACTORY MENU</p>
+        <p class="subdividertitle">FACTORY MENU</p>
             <label class="label" for="oilchangecheckbox">OIL CHANGE: </label>
                 <input type="checkbox" name="oilchangecheckbox" id="oilchangecheckbox"><br>
             <label class="label" for=" midyearcheckbox"> MIDYEAR: </label>
@@ -81,40 +81,40 @@
     </div>               
         <!-- bg hidden -->
     <div id="bg" style="display: none;vertical-align: middle;padding: 1rem 1rem"> 
-        <p class="dividertitle">BG</p>
-            <button class="button" id="brakeflushbtn">BRAKE FLUID FLUSH</button><br>
-            <button class="button" id="inductionbtn">INDUCTION SERVICE</button><br>
-            <button class="button" id="atfbtn">ATF FLUSH</button><br>
-            <button class="button" id="coolantbtn">COOLANT FLUSH</button><br>
+        <p class="subdividertitle">BG</p>
+            <button class="button" id="brakeflushbtn">BRAKE FLUID FLUSH</button><br><br>
+            <button class="button" id="inductionbtn">INDUCTION SERVICE</button><br><br>
+            <button class="button" id="atfbtn">ATF FLUSH</button><br><br>
+            <button class="button" id="coolantbtn">COOLANT FLUSH</button><br><br>
             <button class="button" id="psbtn">POWER STEERING FLUSH</button><br>                   
     </div> 
         <!-- misc <div> not to be used -->
     
             <!-- misc child 1 -->
-        <div id="misc/filter" style="display: none;vertical-align: middle;padding: 1rem 1rem">
+        <div id="miscDiv1" style="display: none;vertical-align: middle;padding: 1rem 1rem">
             <p class="subdividertitle">FILTERS</p>
-                <button class="button" id="acfilterbtn">REPLACE AC FILTER</button><br>
-                <button class="button" id="enginefilterbtn">REPLACE ENGINE AIR FILTER</button><br>
+                <button class="button" id="acfilterbtn">REPLACE AC FILTER</button><br><br>
+                <button class="button" id="enginefilterbtn">REPLACE ENGINE AIR FILTER</button><br><br>
                 <button class="button" id="engineacbtn">REPLACE AC & ENGINE AIR FILTERS</button>
         </div>
             <!-- misc child 2 -->
-        <div id="misc/wipers" style="display: none;vertical-align: middle;padding: 1rem 1rem">
+        <div id="miscDiv2" style="display: none;vertical-align: middle;padding: 1rem 1rem">
             <p class="subdividertitle">WIPERS</p>
             <label class="label" for="insert">INSERT</label>
             <input type="checkbox" name="insert" id="insertcheckbox">
             <label class="label" for="blade">BLADE</label>
-            <input type="checkbox" name="blade" id="bladecheckbox"><br><br><br>
-            <button class="button" id="frwiperbtn">REPLACE FRONT WIPERS</button> 
+            <input type="checkbox" name="blade" id="bladecheckbox"><br><br>
+            <button class="button" id="frwiperbtn">REPLACE FRONT WIPERS</button> <br><br>
             <button class="button" id="rrwiperbtn">REPLACE REAR WIPER</button>                        
         </div>
              <!-- misc child 3 -->
-        <div id="misc/battery" style="display: none;vertical-align: middle;padding: 1rem 1rem">
+        <div id="miscDiv3" style="display: none;vertical-align: middle;padding: 1rem 1rem">
             <p class="subdividertitle">BATTERY</p>
-            <button class="button" id="battbtn">REPLACE BATTERY</button>  
+            <button class="button" id="battbtn">REPLACE BATTERY</button><br><br>  
             <button class="button" id="keyfobbtn">REPLACE KEY FOB BATTERY</button>                            
         </div>
             <!-- misc child 4 -->
-        <div id="misc/bulbs" style="display: none;vertical-align: middle;padding: 1rem 1rem">             
+        <div id="miscDiv4" style="display: none;vertical-align: middle;padding: 1rem 1rem">             
             <p class="subdividertitle">BULBS</p>
             <label class="label" for="lhbulb">LH:</label>
             <input type="checkbox" name="lhbulb" id="lhbulb">
@@ -139,7 +139,6 @@
         </div>
     </div>
 </div>
-  
 <p class="pagedivider">.</p>
     <p style=" font-family: monospace;">notes:keyboard shortcuts  "space"" to insert, numpad "enter" to copy</p>
     <button class="button" id="spencerbutton">button</button><br><img src="images/spencer.jpg" alt="" hidden id="spencerimg">

@@ -3,7 +3,7 @@
 body{
     background-color: darkgray;
 }
-.headerbutton{
+.titleBtn{
     height: 60px;
      width: 200px;
       border-radius: 10px;
@@ -12,7 +12,7 @@ body{
       color: white;
       cursor: pointer;
 }
-.headerbutton:hover{
+.titleBtn:hover{
     background-color: greenyellow;
 }
 .divider{
@@ -61,16 +61,15 @@ body{
     background-color: darkslategray; 
     color: darkslategray;
 }
-.dividerbtn{
+.headerBtn{
     background-color: transparent; 
     color: white; 
     font-family: monospace;
      font-size: 24px;
       border-color: transparent;
-       text-decoration: underline; 
     cursor: pointer;
 }
-.dividerbtn:hover{
+.headerBtn:hover{
     color: greenyellow;
 }
 

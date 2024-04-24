@@ -8,21 +8,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="service.html"><button  class="headerbutton">services</button></a>
-    <a href="repair.html"><button class="headerbutton">repairs</button></a>
-    <a href="recall.html"><button  class="headerbutton">recalls</button></a>    
-    <h1>RECALLS(INOP)</h1>   
-    <p style="background-color: black; color: black;">.</p><br>
-    <p style="background-color: black; color: black;">.</p> 
-    <button id="insertbutton">insert</button>  
-    <p style="background-color: black; color: black;">.</p> 
-    <div>
-    <textarea name="" id="storyFinal" cols="60" rows="10" style="border: 2px solid; border-color: black;">
-    </textarea><br>
-    <button id="copybutton">copy</button>
-    <p style="background-color: black; color: black;">.</p>
-    <p>notes:keyboard shortcuts  "space"" to insert, numpad "enter" to copy</p>
-    <button id="spencerbutton">button</button><br><img src="images/spencer.jpg" alt="" hidden id="spencerimg">
+<a href="service.html"><button  class="titleBtn">SERVICES</button></a>
+<a href="repair.html"><button class="titleBtn">REPAIRS</button></a>
+<a href="recall.html"><button  class="titleBtn">RECALLS(INOP)</button></a>    
+<h1 class="pagetitle">RECALLS(INOP)</h1>   
+<p class="pagedivider">.</p>
+<p class="dividertitle">
+    <!--put hdrBtns here!-->
+</p>
+
+    <!--put menus here!-->
+
+
+<div class="parent">
+    <!--put divs here!-->
+
+
+
+
+
+
+
+
+
+
+
+    <div class="child1" id="storyfinaldiv">
+        <div style="text-align: center;">
+        <textarea class="textfield" name="" id="storyFinal" cols="60" rows="10" style="border: 2px solid; border-color: black;">
+        </textarea><br>
+        <button class="button" id="copybutton">COPY</button>
+        <button class="button" id="finalstoryclearbutton">CLEAR</button>
+        </div>
+    </div>
+</div>
+
+
+<p class="pagedivider">.</p>
+
+<p style=" font-family: monospace;">notes:keyboard shortcuts  "space"" to insert, numpad "enter" to copy</p>
+<button  class="button"   id="spencerbutton">button</button><br><img src="images/spencer.jpg" alt="" hidden id="spencerimg">
     <script src="recall.js"></script>
 </body>
 </html>

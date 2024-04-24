@@ -1,8 +1,4 @@
-/*
-instructions to add new category:
-create div in html 
 
-*/
 //checkboxes
 let onetire = document.getElementById("1tire");
 let twotire = document.getElementById("2tire");
@@ -115,182 +111,153 @@ document.getElementById("spencerbutton").onclick = function(){
         document.getElementById("pslinebtn").onclick=function(){
             document.getElementById("storyFinal").value= "REMOVE P/S LINE\nFILL AND BLEED P/S SYSTEM\nCHECK FOR LEAKS, OK";
         }
- 
 
-
-
-//open subMenus
-document.getElementById("brakesbtn").onclick=function(){
-    document.getElementById("brakesSubMenu").toggleAttribute("hidden");
+//Open Menus
+document.getElementById("hdrBtn1").onclick=function(){
+    document.getElementById("menu1").toggleAttribute("hidden");
     closeDivs();
-    //close other menus
-    document.getElementById("steeringSuspensionSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("engineSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("acSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("electricalSubMenu").setAttribute("hidden","hidden");
+    document.getElementById("menu2").setAttribute("hidden","hidden");
+    document.getElementById("menu3").setAttribute("hidden","hidden");
+    document.getElementById("menu4").setAttribute("hidden","hidden");
+    document.getElementById("menu5").setAttribute("hidden","hidden");
 }
-document.getElementById("steeringbtn").onclick=function(){
-    document.getElementById("steeringSuspensionSubMenu").toggleAttribute("hidden");
+document.getElementById("hdrBtn2").onclick=function(){
+    document.getElementById("menu2").toggleAttribute("hidden");
     closeDivs();
-    //close other menus
-    document.getElementById("brakesSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("engineSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("acSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("electricalSubMenu").setAttribute("hidden","hidden");
+    document.getElementById("menu1").setAttribute("hidden","hidden");
+    document.getElementById("menu3").setAttribute("hidden","hidden");
+    document.getElementById("menu4").setAttribute("hidden","hidden");
+    document.getElementById("menu5").setAttribute("hidden","hidden");
 }
-document.getElementById("enginebtn").onclick=function(){
-    document.getElementById("engineSubMenu").toggleAttribute("hidden");
+document.getElementById("hdrBtn3").onclick=function(){
+    document.getElementById("menu3").toggleAttribute("hidden");
     closeDivs();
-    //close other menus
-    document.getElementById("steeringSuspensionSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("brakesSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("acSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("electricalSubMenu").setAttribute("hidden","hidden");
+    document.getElementById("menu1").setAttribute("hidden","hidden");
+    document.getElementById("menu2").setAttribute("hidden","hidden");
+    document.getElementById("menu4").setAttribute("hidden","hidden");
+    document.getElementById("menu5").setAttribute("hidden","hidden");
 }
-document.getElementById("acbtn").onclick=function(){
-    document.getElementById("acSubMenu").toggleAttribute("hidden");
+document.getElementById("hdrBtn4").onclick=function(){
+    document.getElementById("menu4").toggleAttribute("hidden");
     closeDivs();
-    //close other menus
-    document.getElementById("steeringSuspensionSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("brakesSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("electricalSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("engineSubMenu").setAttribute("hidden","hidden");    
+    document.getElementById("menu1").setAttribute("hidden","hidden");
+    document.getElementById("menu2").setAttribute("hidden","hidden");
+    document.getElementById("menu3").setAttribute("hidden","hidden");
+    document.getElementById("menu5").setAttribute("hidden","hidden");    
 }
-document.getElementById("elecbtn").onclick=function(){
-    document.getElementById("electricalSubMenu").toggleAttribute("hidden");
+document.getElementById("hdrBtn5").onclick=function(){
+    document.getElementById("menu5").toggleAttribute("hidden");
     closeDivs();
-    //close other menus
-    document.getElementById("steeringSuspensionSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("brakesSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("engineSubMenu").setAttribute("hidden","hidden");
-    document.getElementById("acSubMenu").setAttribute("hidden","hidden");
+    document.getElementById("menu1").setAttribute("hidden","hidden");
+    document.getElementById("menu2").setAttribute("hidden","hidden");
+    document.getElementById("menu3").setAttribute("hidden","hidden");
+    document.getElementById("menu4").setAttribute("hidden","hidden");
 }
-//declare hidden items
-    //brakes
-        let brakesSubPadsHidden = document.getElementById("brakes/pads");
-        let brakesSubBoosterHidden = document.getElementById("brakes/booster");
-        let brakesSubMasterCylinderHidden = document.getElementById("brakes/masterCylinder");
-    //suspension
-        let steeringSuspensionSubTiresHidden = document.getElementById("steeringSuspension/tires");
-        let steeringSuspensionSubCvAxleBootHidden = document.getElementById("steeringSuspension/cvAxleBoot");  
-        let steeringSuspensionSubPowerSteeringHidden = document.getElementById("steeringSuspension/powerSteering");  
-        let steeringSuspensionSubSuspensionHidden = document.getElementById("steeringSuspension/suspension");  
-        let steeringSuspensionSubWheelBearingHidden = document.getElementById("steeringSuspension/WheelBearings");  
-        let steeringSuspensionSubuJointHidden = document.getElementById("steeringSuspension/uJointDriveshaft");      
-
-//subMenu to show Divs
-//brakes
-    document.getElementById("padsMenuButton").onclick=function(){
-        closeDivs();
-        console.log("padsbuttonpressed");
-        if(brakesSubPadsHidden.style.display==="none"){
-            brakesSubPadsHidden.style.display="inline-block";
-        }
-        else if(brakesSubPadsHidden.style.display==="inline-block"){
-            brakesSubPadsHidden.style.display="none";
-        }
-    }
-    document.getElementById("boosterMenuButton").onclick=function(){
-        closeDivs();
-
-        if(brakesSubBoosterHidden.style.display==="none"){
-            brakesSubBoosterHidden.style.display="inline-block";
-        }
-        else if(brakesSubBoosterHidden.style.display==="inline-block"){
-            brakesSubBoosterHidden.style.display="none";
-        }
-    }
-    document.getElementById("masterMenuButton").onclick=function(){
-        closeDivs();
-
-        if(brakesSubMasterCylinderHidden.style.display==="none"){
-            brakesSubMasterCylinderHidden.style.display="inline-block";
-        }
-        else if(brakesSubMasterCylinderHidden.style.display==="inline-block"){
-            brakesSubMasterCylinderHidden.style.display="none";
-        }
-    }
-//suspension
-    document.getElementById("tiresMenuButton").onclick=function(){
-        closeDivs();
-
-        if(steeringSuspensionSubTiresHidden.style.display==="none"){
-            steeringSuspensionSubTiresHidden.style.display="inline-block";
-        }
-        else if(steeringSuspensionSubTiresHidden.style.display==="inline-block"){
-            steeringSuspensionSubTiresHidden.style.display="none";
-        }
-
-    }
-    document.getElementById("cvMenuButton").onclick=function(){
-        closeDivs();
-
-        if(steeringSuspensionSubCvAxleBootHidden.style.display==="none"){
-            steeringSuspensionSubCvAxleBootHidden.style.display="inline-block";
-        }
-        else if(steeringSuspensionSubCvAxleBootHidden.style.display==="inline-block"){
-            steeringSuspensionSubCvAxleBootHidden.style.display="none";
-        }
-        
-    }
-    document.getElementById("psMenuButton").onclick=function(){
-        closeDivs();
-
-        if(steeringSuspensionSubPowerSteeringHidden.style.display==="none"){
-            steeringSuspensionSubPowerSteeringHidden.style.display="inline-block";
-        }
-        else if(steeringSuspensionSubPowerSteeringHidden.style.display==="inline-block"){
-            steeringSuspensionSubPowerSteeringHidden.style.display="none";
-        }
-    }
-    document.getElementById("suspensionMenuButton").onclick=function(){
-        closeDivs();
-
-        if(steeringSuspensionSubSuspensionHidden.style.display==="none"){
-            steeringSuspensionSubSuspensionHidden.style.display="inline-block";
-        }
-        else if(steeringSuspensionSubSuspensionHidden.style.display==="inline-block"){
-            steeringSuspensionSubSuspensionHidden.style.display="none";
-        }
-        
-    }
-    document.getElementById("wheelBearingsMenuButton").onclick=function(){
-        closeDivs();
-
-        if(steeringSuspensionSubWheelBearingHidden.style.display==="none"){
-            steeringSuspensionSubWheelBearingHidden.style.display="inline-block";
-        }
-        else if(steeringSuspensionSubWheelBearingHidden.style.display==="inline-block"){
-            steeringSuspensionSubWheelBearingHidden.style.display="none";
-        }
-        
-    }
-    document.getElementById("uJointMenuButton").onclick=function(){
-        closeDivs();
-
-        
-        if(steeringSuspensionSubuJointHidden.style.display==="none"){
-            steeringSuspensionSubuJointHidden.style.display="inline-block";
-        }
-        else if(steeringSuspensionSubuJointHidden.style.display==="inline-block"){
-            steeringSuspensionSubuJointHidden.style.display="none";
-        }
-    }
+//Declare hidden items
+let brkDiv1 = document.getElementById("brkDiv1");
+let brkDiv2 = document.getElementById("brkDiv2");
+let brkDiv3 = document.getElementById("brkDiv3");
+let sSDiv1 = document.getElementById("sSDiv1");
+let sSDiv2 = document.getElementById("sSDiv2");  
+let sSDiv3 = document.getElementById("sSDiv3");  
+let sSDiv4 = document.getElementById("sSDiv4");  
+let sSDiv5 = document.getElementById("sSDiv5");  
+let sSDiv6 = document.getElementById("sSDiv6");      
+//Menu Btns show Divs
+    //BRAKES
+        document.getElementById("brkDiv1Btn").onclick=function(){
+            closeDivs();
+            if(brkDiv1.style.display==="none"){
+                brkDiv1.style.display="inline-block";
+            }
+            else if(brkDiv1.style.display==="inline-block"){
+                brkDiv1.style.display="none";
+            }}
+        document.getElementById("brkDiv2Btn").onclick=function(){
+            closeDivs();
+            if(brkDiv2.style.display==="none"){
+                brkDiv2.style.display="inline-block";
+            }
+            else if(brkDiv2.style.display==="inline-block"){
+                brkDiv2.style.display="none";
+            }}
+        document.getElementById("brkDiv3Btn").onclick=function(){
+            closeDivs();
+            if(brkDiv3.style.display==="none"){
+                brkDiv3.style.display="inline-block";
+            }
+            else if(brkDiv3.style.display==="inline-block"){
+                brkDiv3.style.display="none";
+            }}
+    //STEERING AND SUSPENSION
+        document.getElementById("sSDiv1Btn").onclick=function(){
+            closeDivs();
+            if(sSDiv1.style.display==="none"){
+                sSDiv1.style.display="inline-block";
+            }
+            else if(sSDiv1.style.display==="inline-block"){
+                sSDiv1.style.display="none";
+            }}
+        document.getElementById("sSDiv2Btn").onclick=function(){
+            closeDivs();
+            if(sSDiv2.style.display==="none"){
+                sSDiv2.style.display="inline-block";
+            }
+            else if(sSDiv2.style.display==="inline-block"){
+                sSDiv2.style.display="none";
+            }}
+        document.getElementById("sSDiv3Btn").onclick=function(){
+            closeDivs();
+            if(sSDiv3.style.display==="none"){
+                sSDiv3.style.display="inline-block";
+            }
+            else if(sSDiv3.style.display==="inline-block"){
+                sSDiv3.style.display="none";
+            }}
+        document.getElementById("sSDiv4Btn").onclick=function(){
+            closeDivs();
+            if(sSDiv4.style.display==="none"){
+                sSDiv4.style.display="inline-block";
+            }
+            else if(sSDiv4.style.display==="inline-block"){
+                sSDiv4.style.display="none";
+            }}
+        document.getElementById("sSDiv5Btn").onclick=function(){
+            closeDivs();
+            if(sSDiv5.style.display==="none"){
+                sSDiv5.style.display="inline-block";
+            }
+            else if(sSDiv5.style.display==="inline-block"){
+                sSDiv5.style.display="none";
+            }}
+        document.getElementById("sSDiv6Btn").onclick=function(){
+            closeDivs();
+            if(sSDiv6.style.display==="none"){
+                sSDiv6.style.display="inline-block";
+            }
+            else if(sSDiv6.style.display==="inline-block"){
+                sSDiv6.style.display="none";
+            }}
+    //ENGINES
+    //AC
+    //ELECTRICAL    
 function closeDivs(){
-    steeringSuspensionSubuJointHidden.style.display="none";
-    steeringSuspensionSubWheelBearingHidden.style.display="none";
-    steeringSuspensionSubSuspensionHidden.style.display="none";
-    steeringSuspensionSubPowerSteeringHidden.style.display="none";
-    steeringSuspensionSubCvAxleBootHidden.style.display="none";
-    steeringSuspensionSubTiresHidden.style.display="none";
-    brakesSubMasterCylinderHidden.style.display="none";
-    brakesSubBoosterHidden.style.display="none";
-    brakesSubPadsHidden.style.display="none";
-
-
-
-
-
-
+    sSDiv1.style.display="none";
+    sSDiv2.style.display="none";
+    sSDiv3.style.display="none";
+    sSDiv4.style.display="none";
+    sSDiv5.style.display="none";
+    sSDiv6.style.display="none";
+    brkDiv1.style.display="none";
+    brkDiv2.style.display="none";
+    brkDiv3.style.display="none";
 }
-
+/*
+To add new content
+-------------------
+1. create new div in main area in html ex. (brkDiv1)
+2. code write(); function in js.
+3. create new menuBtn ex. (brkDiv1Btn)
+4. declare .display="none" variables for divs (same name as step1)
+5. code open and close div function in js. (add to closeDivs();)
+*/
