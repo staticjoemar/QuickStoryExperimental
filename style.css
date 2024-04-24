@@ -1,0 +1,93 @@
+
+
+body{
+    background-color: darkgray;
+}
+.headerbutton{
+    height: 60px;
+     width: 200px;
+      border-radius: 10px;
+      font-family: monospace;
+      background-color: darkslategray;
+      color: white;
+      cursor: pointer;
+}
+.headerbutton:hover{
+    background-color: greenyellow;
+}
+.divider{
+    background-color: black; 
+    color: black;
+     height: 5px;
+      width: 300px;
+}
+.label{
+    font-family: monospace; 
+    font-size: 16px;
+}
+.button{
+    font-family: monospace;
+    font-size: 16px;
+    border-radius: 6px;
+    transition-duration: 0.2s;
+    cursor:pointer;
+}
+
+.button:hover{
+    background-color: greenyellow;
+}
+
+.textfield{
+    font-family: monospace;
+}
+.dividertitle{
+    background-color: black; 
+    color: white; 
+    height: 30px; 
+    font-family: monospace;
+     font-size: 24px;
+}
+.subdividertitle{
+    background-color: darkslategray; 
+    color: white; 
+    height: 30px; 
+    font-family: monospace;
+     font-size: 21px; 
+}
+.pagetitle{
+    font-family: monospace; font-size: 50px;
+}
+.pagedivider{
+    background-color: darkslategray; 
+    color: darkslategray;
+}
+.dividerbtn{
+    background-color: transparent; 
+    color: white; 
+    font-family: monospace;
+     font-size: 24px;
+      border-color: transparent;
+       text-decoration: underline; 
+    cursor: pointer;
+}
+.dividerbtn:hover{
+    color: greenyellow;
+}
+
+.parent { 
+    border: 3px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: left;
+} 
+.child2{
+    display: none;vertical-align: middle;padding: 1rem 1rem;
+    
+    
+}
+.child1 { 
+    display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  
+} 
